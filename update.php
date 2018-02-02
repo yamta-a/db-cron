@@ -32,7 +32,7 @@ $result = $con->query($sql);
 if ($result->num_rows > 0) {
     // output data of each row
     //echo "Printing fetched records... <br />";
-    echo "writing records to new database... <br />";
+    echo "updating records from database... <br />";
     while($row = $result->fetch_assoc()) {
         // echo "id: " . $row["admission_id"]. " - Name: " . $row["fname"]. " " . $row["password"]. "<br>";
         $username = $row["admission_id"];
